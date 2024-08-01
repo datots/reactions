@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* Desktop Version */
+
+body {
+  max-width: 1440px;
+  background-color: hsl(241, 100%, 89%);
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.left {
+  background-color: hsl(252, 100%, 67%);
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 368px;
+  text-align: center;
+  color: white;
+}
+.right {
+  width: auto;
+  background-color: white;
+  border-radius: 25px;
+  width: 368px;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.circle {
+  background-color: hsla(256, 72%, 46%, 1);
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.category {
+  list-style-type: none;
+}
+
+#category {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 80%;
+  height: 50%;
+  max-width: 1200px; /* Adjust this as needed */
+  margin: auto;
+}
+
+#category li {
+  margin-bottom: 10px; /* Gap between items */
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+#category li img {
+  margin-right: 10px;
+}
+
+/* Mobile Version */
+@media screen and (max-width: 375px) {
+  body {
+    background-color: white;
+    font-family: "Hanken Grotesk", sans-serif;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .left {
+    background-color: hsl(252, 100%, 67%);
+    width: 100%;
+    min-width: 300px;
+    box-sizing: border-box;
+    border-radius: 25px;
+  }
+
+  .left p {
+    color: white;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .circle {
+    background-color: hsla(256, 72%, 46%, 1);
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  p span {
+    font-size: 50px;
+  }
+
+  .right {
+    background-color: white;
+  }
+
+  .right {
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    width: 100%;
+    min-width: 300px;
+    box-sizing: border-box;
+    border-radius: 25px;
+  }
+  .category {
+    list-style-type: none;
+  }
+}
